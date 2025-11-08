@@ -1,0 +1,70 @@
+.footer-custom {
+  background-color: var(--bg); /* igual al navbar */
+  backdrop-filter: blur(10px);
+  border-top: 2px solid var(--primary);
+  padding: 1rem 0;
+  margin-top: auto;
+  color: var(--primary);
+  font-family: "Fredoka One", cursive;
+  box-shadow: 0 -3px 10px var(--shadow);
+}
+
+/* contenido en una sola línea */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* logo */
+.footer-logo span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* redes sociales */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background-color: var(--bg);
+  transition: all 0.3s ease;
+}
+.social-links a:hover {
+  background-color: var(--primary);
+  color: var(--text-button);
+  transform: translateY(-2px);
+  box-shadow: 0 0 8px var(--shadow);
+}
+.social-links a i {
+  color: inherit !important;
+}
+
+/* copyright */
+.footer-copy {
+  color: var(--primary);
+  font-weight: 500;
+  white-space: nowrap; /* evita salto de línea */
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}

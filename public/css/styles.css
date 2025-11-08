@@ -1,0 +1,90 @@
+/*Explicaciones de algunos items.
+
+1-:root
+  Definimos las variables globales de colores y sombras que usaremos para todo el proyecto.
+  Luego las llamamos utilizando var(--nombre-variable).
+
+2-clamp(valor-minimo, valor-preferido, valor-maximo)
+  Define valores responsivos para el tamaño de pantalla, ajustando entre un minimo y un maximo.
+3-
+*/
+
+:root {
+  --bg: #000000;
+  --primary: #ff6600;
+  --primary-hover: #ff7700;
+  --text: #fa6400;
+  --text-secondary: rgba(255, 102, 0, 0.6);
+  --text-button: #000000;
+  --shadow: rgba(255, 102, 0, 0.5);
+
+  /* Modal */
+  --modal-bg: #000000;
+  --modal-icon-bg: #000000;
+  --input-border: #ff6600;
+  --input-text: #ffffff;
+  --placeholder-color: rgba(255, 255, 255, 0.7);
+  --divider: #ff6600;
+}
+
+body {
+  background: linear-gradient(180deg, #2c2c2c 0%, #1a1a1a 100%);
+  color: #ff6600;
+  font-family: "Fredoka One", cursive;
+  margin: 0;
+  padding: 0;
+}
+/* Prevenir overflow horizontal */
+@media (max-width: 1024px) {
+    body {
+        overflow-x: auto;
+    }
+    
+    .navbar {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .navbar-nav {
+        flex-wrap: wrap;
+        gap: 0 !important;
+        width: 100%;
+    }
+    
+    .nav-link {
+        padding: 0.25rem 0.35rem !important;
+        font-size: 0.80rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    .navbar-brand {
+        flex-shrink: 0;
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        padding: 0.2rem 0.25rem !important;
+        font-size: 0.70rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        overflow-x: auto;
+    }
+    
+    .navbar-nav {
+        flex-wrap: nowrap;
+        gap: 2px;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0.5rem !important;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+}

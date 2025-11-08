@@ -1,0 +1,204 @@
+/* ================================
+   Register Page Styles (aislados)
+   ================================ */
+
+/* Contenedor general */
+.home-container {
+  max-width: 900px;
+  width: 90%;
+  margin: 2rem auto 3rem auto; /* margen superior e inferior */
+  padding: 0;
+}
+
+/* Título */
+.home-container .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Card del formulario */
+.profile-card {
+  background-color: #1a1a1a; /* oscuro igual que ranking */
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+/* ================================
+   Register Page - Login Style
+   ================================ */
+
+/* Encapsulamos todo dentro de #registerForm */
+#registerForm {
+  font-family: "Fredoka One", cursive;
+}
+
+/* Labels */
+#registerForm .form-label {
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+/* Input group general */
+#registerForm .input-group {
+  background-color: #1a1a1a;
+  border: 2px solid var(--primary);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Inputs */
+#registerForm .form-control {
+  background-color: transparent;
+  color: var(--text) !important;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#registerForm .form-control::placeholder {
+  color: var(--placeholder-color) !important;
+  opacity: 1;
+}
+
+#registerForm .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 8px var(--shadow);
+}
+
+/* Input-group-text (iconos y ojitos) */
+#registerForm .input-group-text {
+  background-color: #1a1a1a;
+  color: var(--primary) !important;
+  border: none;
+}
+
+#registerForm .toggle-password i {
+  color: var(--primary) !important;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#registerForm .toggle-password:hover i {
+  color: var(--primary-hover) !important;
+}
+
+/* Botón de registro */
+#registerForm .btn-custom {
+  background-color: var(--primary) !important;
+  color: var(--text-button) !important;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+#registerForm .btn-custom:hover {
+  background-color: var(--primary-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px var(--shadow);
+  color: white !important;
+}
+
+/* Disabled */
+#registerForm .btn-custom:disabled {
+  background-color: #555555 !important;
+  color: #aaaaaa !important;
+  cursor: not-allowed;
+}
+
+/* Checkbox */
+#registerForm .form-check-label {
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+#registerForm .form-check-input {
+  background-color: #1a1a1a !important;
+  border: 2px solid var(--primary) !important;
+}
+
+#registerForm .form-check-input:checked {
+  background-color: var(--primary) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+/* Link de Términos y Condiciones */
+#registerForm .form-check-label a {
+  color: var(--primary) !important;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+#registerForm .form-check-label a:hover {
+  color: var(--primary-hover) !important;
+}
+
+/* Hover y foco del input-group */
+#registerForm .input-group:focus-within {
+  box-shadow: 0 0 8px var(--shadow);
+  border-color: var(--primary-hover);
+}
+
+.modal-dark .title {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+/* Links dentro del modal de Términos y Condiciones */
+.modal-dark a {
+  color: var(--primary); /* naranja definido en :root */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.modal-dark a:hover {
+  color: var(--primary-hover); /* naranja más claro al pasar el mouse */
+}
+
+/* Fondo del modal */
+.modal-dark {
+  background-color: #1a1a1a; /* color de fondo deseado */
+  color: var(--text); /* mantiene el color de texto naranja */
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 18px var(--shadow);
+}
+.modal-dark .modal-body {
+  background-color: #1a1a1a;
+  color: var(--text);
+}
+
+/* Scrollbar personalizado para modal-dark */
+.modal-dark .modal-body {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Chrome, Edge, Safari */
+.modal-dark .modal-body::-webkit-scrollbar {
+  width: 10px; /* ancho del scrollbar */
+}
+
+.modal-dark .modal-body::-webkit-scrollbar-track {
+  background: #1a1a1a; /* fondo del track */
+  border-radius: 5px;
+}
+
+.modal-dark .modal-body::-webkit-scrollbar-thumb {
+  background-color: #ff6600; /* color del thumb */
+  border-radius: 5px;
+  border: 2px solid #1a1a1a; /* separación del track */
+}
+
+/* Firefox */
+.modal-dark .modal-body {
+  scrollbar-width: thin;
+  scrollbar-color: #ff6600 #1a1a1a;
+}

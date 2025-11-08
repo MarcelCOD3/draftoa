@@ -1,0 +1,117 @@
+/* ---------- ESTILO GENERAL ---------- */
+body {
+  background-color: #0b0b0b;
+  color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.container-fluid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.2);
+}
+
+/* ---------- TÍTULOS ---------- */
+h1,
+h2 {
+  color: #ff6600;
+  text-align: center;
+  text-shadow: 0 0 6px rgba(255, 102, 0, 0.6);
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* ---------- TABLA ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  vertical-align: middle;
+}
+
+table th {
+  background-color: #ff6600;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+table tr:nth-child(even) {
+  background-color: #1e1e1e;
+}
+
+table tr:hover {
+  background-color: #292929;
+}
+
+/* ---------- BOTONES ---------- */
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.25s ease;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background-color: #ffdb4d;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: #ff3300;
+}
+
+.btn-danger:hover {
+  background-color: #ff4d1a;
+  transform: scale(1.05);
+}
+
+.btn i {
+  margin-right: 6px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  table th,
+  table td {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+
+  .container-fluid {
+    padding: 20px 10px;
+  }
+}

@@ -1,0 +1,292 @@
+.navbar-custom {
+  background-color: var(--bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--primary);
+  padding: 0.5rem 0;
+  font-family: "Fredoka One", cursive;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 3px 10px var(--shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary) !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+  color: var(--primary-hover) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--primary);
+  z-index: 1100;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FF6600' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-link {
+  color: var(--primary) !important;
+  font-weight: 600;
+  margin: 0 3px;
+  padding: 6px 10px !important;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: var(--primary);
+  color: var(--text-button) !important;
+  box-shadow: 0 0 5px var(--shadow);
+}
+
+.navbar-nav .nav-item.dropdown {
+  position: relative;
+  z-index: 1050;
+}
+.navbar-nav .nav-item.dropdown .dropdown-menu,
+.dropdown .dropdown-menu {
+  background-color: var(--bg);
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  box-shadow: 0 3px 15px rgba(255, 107, 0, 0.3);
+  font-family: "Fredoka One", cursive;
+  min-width: 180px;
+  z-index: 1100;
+}
+.navbar-nav .nav-item.dropdown .dropdown-item,
+.dropdown .dropdown-item {
+  color: var(--primary) !important;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar-nav .nav-item.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:hover {
+  background-color: var(--primary);
+  color: var(--text-button) !important;
+}
+.dropdown-item img,
+.dropdown-item i {
+  vertical-align: middle;
+}
+
+.navbar .dropdown-toggle.show {
+  background-color: var(--primary);
+  color: var(--text-button) !important;
+}
+.navbar .dropdown-toggle.show i {
+  color: var(--text-button) !important;
+}
+
+.btn-custom {
+  background-color: var(--primary);
+  border: none;
+  color: var(--text-button);
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 3px 10px var(--shadow);
+  transition: all 0.3s ease;
+}
+.btn-custom i {
+  color: var(--text-button);
+}
+.btn-custom:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px var(--shadow);
+  color: #fff !important;
+}
+.btn-custom:hover i {
+  color: #fff !important;
+}
+
+.modal-dark {
+  background-color: var(--modal-bg);
+  color: var(--text);
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 18px var(--shadow);
+  font-family: "Fredoka One", cursive;
+}
+
+.modal-dark .modal-header {
+  border-bottom: 1px solid rgba(255, 102, 0, 0.14);
+  background: transparent;
+  color: var(--primary);
+  justify-content: space-between;
+}
+
+.modal-dark .modal-title {
+  color: var(--primary);
+  font-weight: 700;
+}
+.modal-dark .modal-title i {
+  color: var(--primary);
+}
+
+.modal-dark .modal-body {
+  color: var(--text);
+}
+
+.modal-dark .form-label {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.modal-dark .input-group {
+  background-color: #1a1a1a;
+  border: 1.5px solid #ff6600;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal-dark .input-group .form-control {
+  background-color: transparent;
+  color: #ff6600;
+  border: none;
+  box-shadow: none;
+}
+
+.modal-dark .input-group-text {
+  background-color: #1a1a1a;
+  color: #ff6600;
+  border: none;
+}
+
+.modal-dark .input-group:focus-within {
+  box-shadow: 0 0 8px rgba(255, 102, 0, 0.7);
+  border-color: #ff6600;
+}
+
+.modal-dark .toggle-password i {
+  color: #ff6600;
+}
+
+.modal-dark .form-control,
+.modal-dark .form-select {
+  background: #161616;
+  color: var(--text);
+  border: 1px solid rgba(255, 102, 0, 0.12);
+  border-radius: 6px;
+}
+
+.modal-dark .form-control::placeholder {
+  color: var(--placeholder-color);
+}
+
+.modal-dark .form-control:focus,
+.modal-dark .form-select:focus {
+  outline: none;
+  border-color: var(--primary-hover);
+  box-shadow: 0 0 8px var(--shadow);
+}
+
+.modal-dark select.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23ff6600' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.65rem auto;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.modal-dark #playerInputs {
+  border-top: 2px solid var(--primary);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.modal-dark .btn-custom,
+.modal-dark .btn-secondary {
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+}
+
+.modal-dark .btn-custom {
+  background: var(--primary);
+  color: var(--text-button);
+  border: none;
+  box-shadow: 0 3px 10px rgba(255, 102, 0, 0.5);
+}
+.modal-dark .btn-custom:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.7);
+}
+
+.modal-dark .btn-secondary {
+  background: #2b2b2b;
+  color: var(--text-secondary);
+  border: 1px solid var(--primary);
+  transition: all 0.25s ease;
+}
+
+.modal-dark .btn-secondary:hover {
+  background-color: #3a3a3a;
+  color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.modal-dark .btn-close {
+  background-color: transparent;
+  opacity: 0.8;
+  transition: all 0.25s ease;
+  filter: invert(58%) sepia(53%) saturate(611%) hue-rotate(7deg)
+    brightness(100%) contrast(95%);
+}
+.modal-dark .btn-close:hover {
+  /* Igual que en main.css */
+  opacity: 1;
+  transform: scale(1.2);
+  filter: invert(41%) sepia(92%) saturate(639%) hue-rotate(8deg)
+    brightness(100%) contrast(95%);
+  cursor: pointer;
+}
+
+.modal-dark .modal-footer {
+  border-top: none;
+}
+
+.modal-dark .alert-danger {
+  background-color: #2a2a2a;
+  color: #ff6600;
+  border: 1px solid #ff6600;
+}
+.modal-dark .alert-danger a {
+  color: #ff8533;
+  text-decoration: underline;
+}
+.modal-dark .alert-danger a:hover {
+  color: #ffa366;
+}
+@media (max-width: 1024px) {
+    #navbarNav {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    #navbarNav .nav-link {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.9rem;
+    }
+}

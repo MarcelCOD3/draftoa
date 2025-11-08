@@ -1,0 +1,97 @@
+#game-container {
+  border: 2px solid #333;
+  margin: 20px auto;
+  overflow: hidden;
+  background-color: #000000;
+  max-width: 800px;
+  position: relative;
+}
+
+#mute-btn {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+#mute-btn i {
+  color: white;
+  font-size: 12px;
+  transform: scale(2);
+  transform-origin: top left;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#dino-selector-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.dino-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  width: 62px;
+}
+
+.dino-card:hover {
+  transform: scale(1.1);
+  border-color: #2c9c5c;
+}
+
+.dino-card.selected {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #2c9c5c;
+  border-color: #2c9c5c;
+}
+
+.dino-sprite-preview img {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+#dino-tooltip {
+  position: absolute;
+  display: none;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 100;
+  width: 220px;
+  text-align: left;
+  font-size: 0.9em;
+  pointer-events: none;
+}
+
+.dino-card:hover #dino-tooltip {
+  display: block;
+}
+
+.minigame-title,
+.minigame-subtitle,
+#dino-tooltip {
+  font-family: "Press Start 2P", cursive;
+}

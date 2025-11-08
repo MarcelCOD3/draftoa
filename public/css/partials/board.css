@@ -1,0 +1,135 @@
+#tablero {
+  width: 80%;
+  max-width: 75vh;
+  aspect-ratio: 1/1;
+  background-image: url("/draftosaurus/public/img/tableroJuego.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 3vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.zona {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #555;
+  background-color: #eaeaea;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#zona1 {
+  top: 7%;
+  left: 6%;
+  width: 30%;
+  height: 15%;
+  rotate: -2deg;
+}
+#zona2 {
+  top: 38%;
+  left: 7%;
+  width: 20%;
+  height: 20%;
+}
+#zona3 {
+  top: 70%;
+  left: 12%;
+  width: 21%;
+  height: 17%;
+}
+#zona4 {
+  top: 75%;
+  left: 48%;
+  width: 15%;
+  height: 15%;
+}
+#zona5 {
+  top: 10%;
+  left: 68%;
+  width: 10%;
+  height: 6%;
+}
+#zona6 {
+  top: 42%;
+  left: 61%;
+  width: 30%;
+  height: 15%;
+}
+#zona7 {
+  top: 67%;
+  left: 74%;
+  width: 18%;
+  height: 13%;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#downbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#barra-completa {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0.3);
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#fichas.barra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.ficha {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ficha:hover {
+  transform: scale(1.4);
+}
+
+#ajustes {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #barra-completa {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #ajustes {
+    margin-top: 10px;
+  }
+}
